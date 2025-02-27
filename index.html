@@ -15,12 +15,12 @@
     pannellum.viewer('panorama', {
       "default": {
         "firstScene": "scene1",
-        "sceneFadeDuration": 1000
+        "sceneFadeDuration": 1000 // For transition fade
       },
       "scenes": {
         "scene1": {
           "type": "equirectangular",
-          "panorama": "image2.JPG",  // First scene panorama
+          "panorama": "image2.JPG",  // First scene panorama, laser & electronics room
           "autoLoad": true,
           "hotSpots": [
             {
@@ -48,7 +48,7 @@
         },
         "secondScene": {
           "type": "equirectangular",
-          "panorama": "image3.jpeg", 
+          "panorama": "image3.jpeg", // Second scene panorama, workshop room
           "autoLoad": true,
           "hotSpots": [
             {
