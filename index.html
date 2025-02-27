@@ -24,6 +24,20 @@
                     "text": "Laser cutter",
                     "URL": "https://example.com" // Optional: Link to a website
                 },
+                {
+                    "pitch": -10,
+                    "yaw": -45,
+                    "type": "scene",
+                    "text": "Go to another panorama",
+                    "sceneId": "secondScene"
+                }
+            ],
+            "scenes": {
+                "secondScene": {
+                    "type": "equirectangular",
+                    "panorama": "second-image.jpg",
+                    "autoLoad": true
+                }
             }
         });
     </script>
