@@ -15,34 +15,31 @@
     pannellum.viewer('panorama', {
       "default": {
         "firstScene": "scene1",
-        "sceneFadeDuration": 1000 // For transition fade
+        "sceneFadeDuration": 1000
       },
       "scenes": {
         "scene1": {
           "type": "equirectangular",
-          "panorama": "Main-Area.JPG",  // First scene panorama, main area, front desk, 3D printers
+          "panorama": "Main-Area.JPG",
           "autoLoad": true,
           "hotSpots": [
             {
               "pitch": 0,
               "yaw": 38,
               "type": "info",
-              "text": "Prusa MK4 3D Printers",
-          
+              "text": "Prusa MK4 3D Printers"
             },
             {
               "pitch": 3,
               "yaw": -254,
               "type": "info",
-              "text": "3D Print Pick Up Shelf",
-        
+              "text": "3D Print Pick Up Shelf"
             },
-           {
+            {
               "pitch": 0,
               "yaw": -65,
               "type": "info",
-              "text": "Ditto Pattern Projector",
-        
+              "text": "Ditto Pattern Projector"
             },
             {
               "pitch": 2,
@@ -50,39 +47,33 @@
               "type": "scene",
               "text": "Continue the tour",
               "sceneId": "scene2"
-            }
-          ]
-        },
-
-       {
+            },
+            {
               "pitch": 2,
               "yaw": 210,
               "type": "scene",
               "text": "Continue the tour",
               "sceneId": "scene5"
-                   }
+            }
           ]
         },
 
-        
         "scene2": {
           "type": "equirectangular",
-          "panorama": "Middle-Area.JPG",  // Second scene panorama, main area middle, sewing machines
+          "panorama": "Middle-Area.JPG",
           "autoLoad": true,
           "hotSpots": [
             {
               "pitch": -10,
               "yaw": 0,
               "type": "info",
-              "text": "Janome M7 Continental Sewing Machine",
-          
+              "text": "Janome M7 Continental Sewing Machine"
             },
             {
               "pitch": 0,
-              "yaw": -360,
+              "yaw": 0,
               "type": "info",
-              "text": "Janome AirThread 2000D Serger",
-        
+              "text": "Janome AirThread 2000D Serger"
             },
             {
               "pitch": 0,
@@ -90,50 +81,40 @@
               "type": "scene",
               "text": "Continue the tour",
               "sceneId": "scene1"
-                   },
-             {
+            },
+            {
               "pitch": 0,
               "yaw": 120,
               "type": "scene",
               "text": "Continue the tour workshop",
               "sceneId": "scene4"
-                   },
-                        {
+            },
+            {
               "pitch": 0,
               "yaw": 210,
               "type": "scene",
               "text": "Continue the tour back",
               "sceneId": "scene3"
-                   }
+            }
           ]
         },
 
-
-    "scene5": {
+        "scene3": {
           "type": "equirectangular",
-          "panorama": "Electronics-Room.JPG",  // Electronics room panorama, laser cutter, electronics bench, pressure former
+          "panorama": "Back-Area.JPG",
           "autoLoad": true,
           "hotSpots": [
             {
               "pitch": -10,
               "yaw": 0,
               "type": "info",
-              "text": "Epilog Fusion Maker 36 Laser Cutter",
-          
+              "text": "Janome Memory Craft 550e Embroidery Machine"
             },
             {
               "pitch": 0,
               "yaw": -190,
               "type": "info",
-              "text": "Electronics Bench",
-        
-            },
-                        {
-              "pitch": 0,
-              "yaw": -222,
-              "type": "info",
-              "text": "Pressure Former",
-        
+              "text": "Cricut Maker 3"
             },
             {
               "pitch": 0,
@@ -145,63 +126,13 @@
           ]
         },
 
-
-
-        
-
-        "scene3": {
+        "scene4": {
           "type": "equirectangular",
-          "panorama": "Back-Area.JPG",  // Third scene panorama, back area, embroidery machine, Cricut, button maker
-          "autoLoad": true,
-          "hotSpots": [
-            {
-              "pitch": -10,
-              "yaw": 0,
-              "type": "info",
-              "text": "Janome Memory Craft 550e Embroidery Machine",
-          
-            },
-            {
-              "pitch": 0,
-              "yaw": -190,
-              "type": "info",
-              "text": "Cricut Maker 3",
-        
-            },
-            {
-              "pitch": 0,
-              "yaw": 115,
-              "type": "scene",
-              "text": "Continue the tour",
-              "sceneId": "scene2"
-                   }
-          ]
-        },
-
-        
-        "Scene4": {
-          "type": "equirectangular",
-          "panorama": "Workshop-Room.JPG", // Scene 4 panorama, workshop room
+          "panorama": "Workshop-Room.JPG",
           "autoLoad": true,
           "hotSpots": [
             {
               "pitch": 10,
               "yaw": -145,
               "type": "scene",
-              "text": "Continue the tour",
-              "sceneId": "scene2"
-            },
-            {
-             "pitch": 8,
-              "yaw": 103,
-              "type": "info",
-              "text": "Workshop Room",
-          
-            }
-          ]
-        }
-      }
-    });
-  </script>
-</body>
-</html>
+              "text":
