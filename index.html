@@ -20,14 +20,95 @@
       "scenes": {
         "scene1": {
           "type": "equirectangular",
-          "panorama": "Electronics-Room.JPG",  // First scene panorama, laser & electronics room
+          "panorama": "Main-Area.JPG",  // First scene panorama, main area, front desk, 3D printers
           "autoLoad": true,
           "hotSpots": [
             {
               "pitch": -10,
               "yaw": 0,
               "type": "info",
-              "text": "Epilog Fusion Maker Laser Cutter",
+              "text": "Prusa MK4 3D Printers",
+          
+            },
+            {
+              "pitch": 0,
+              "yaw": -190,
+              "type": "info",
+              "text": "3D Print Pick Up Shelf",
+        
+            },
+           {
+              "pitch": 0,
+              "yaw": -300,
+              "type": "info",
+              "text": "Ditto Pattern Projector",
+        
+            },
+            {
+              "pitch": 0,
+              "yaw": 115,
+              "type": "scene",
+              "text": "Continue the tour",
+              "sceneId": "scene2"
+            }
+          ]
+        },
+
+        
+        "scene2": {
+          "type": "equirectangular",
+          "panorama": "Middle-Area.JPG",  // Second scene panorama, main area middle, sewing machines
+          "autoLoad": true,
+          "hotSpots": [
+            {
+              "pitch": -10,
+              "yaw": 0,
+              "type": "info",
+              "text": "Janome M7 Continental Sewing Machine",
+          
+            },
+            {
+              "pitch": 0,
+              "yaw": -190,
+              "type": "info",
+              "text": "Janome AirThread 2000D Serger",
+        
+            },
+            {
+              "pitch": 0,
+              "yaw": 115,
+              "type": "scene",
+              "text": "Continue the tour",
+              "sceneId": "scene1"
+                   },
+             {
+              "pitch": 0,
+              "yaw": 200,
+              "type": "scene",
+              "text": "Continue the tour workshop",
+              "sceneId": "scene4"
+                   },
+                        {
+              "pitch": 0,
+              "yaw": 300,
+              "type": "scene",
+              "text": "Continue the tour back",
+              "sceneId": "scene3"
+                   }
+          ]
+        },
+
+
+    "scene5": {
+          "type": "equirectangular",
+          "panorama": "Electronics-Room.JPG",  // Electronics room panorama, laser cutter, electronics bench, pressure former
+          "autoLoad": true,
+          "hotSpots": [
+            {
+              "pitch": -10,
+              "yaw": 0,
+              "type": "info",
+              "text": "Epilog Fusion Maker 36 Laser Cutter",
           
             },
             {
@@ -37,18 +118,60 @@
               "text": "Electronics Bench",
         
             },
+                        {
+              "pitch": 0,
+              "yaw": -222,
+              "type": "info",
+              "text": "Pressure Former",
+        
+            },
             {
               "pitch": 0,
               "yaw": 115,
               "type": "scene",
               "text": "Continue the tour",
-              "sceneId": "secondScene"
+              "sceneId": "scene2"
             }
           ]
         },
-        "secondScene": {
+
+
+
+        
+
+        "scene3": {
           "type": "equirectangular",
-          "panorama": "image3.jpeg", // Second scene panorama, workshop room
+          "panorama": "Back-Area.JPG",  // Third scene panorama, back area, embroidery machine, Cricut, button maker
+          "autoLoad": true,
+          "hotSpots": [
+            {
+              "pitch": -10,
+              "yaw": 0,
+              "type": "info",
+              "text": "Janome Memory Craft 550e Embroidery Machine",
+          
+            },
+            {
+              "pitch": 0,
+              "yaw": -190,
+              "type": "info",
+              "text": "Cricut Maker 3",
+        
+            },
+            {
+              "pitch": 0,
+              "yaw": 115,
+              "type": "scene",
+              "text": "Continue the tour",
+              "sceneId": "scene2"
+                   }
+          ]
+        },
+
+        
+        "Scene4": {
+          "type": "equirectangular",
+          "panorama": "Workshop-Room.JPG", // Scene 4 panorama, workshop room
           "autoLoad": true,
           "hotSpots": [
             {
@@ -56,7 +179,7 @@
               "yaw": -145,
               "type": "scene",
               "text": "Continue the tour",
-              "sceneId": "scene1"
+              "sceneId": "scene2"
             },
             {
              "pitch": 8,
