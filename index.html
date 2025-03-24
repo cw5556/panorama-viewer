@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
       "scenes": {
         "scene1": {
           "type": "equirectangular",
-          "panorama": "Main-Area.JPG",
+          "panorama": "Main-Area.jpg",  // ✅ fixed extension
           "autoLoad": true,
           "hotSpots": [
             {
@@ -60,7 +60,7 @@
 
         "scene2": {
           "type": "equirectangular",
-          "panorama": "Middle-Area.JPG",
+          "panorama": "Middle-Area.jpg",  // ✅ fixed
           "autoLoad": true,
           "hotSpots": [
             {
@@ -101,7 +101,7 @@
 
         "scene3": {
           "type": "equirectangular",
-          "panorama": "Back-Area.JPG",
+          "panorama": "Back-Area.jpg",  // ✅ fixed
           "autoLoad": true,
           "hotSpots": [
             {
@@ -128,11 +128,59 @@
 
         "scene4": {
           "type": "equirectangular",
-          "panorama": "Workshop-Room.JPG",
+          "panorama": "Workshop-Room.jpg",  // ✅ fixed
           "autoLoad": true,
           "hotSpots": [
             {
               "pitch": 10,
               "yaw": -145,
               "type": "scene",
-              "text":
+              "text": "Continue the tour",
+              "sceneId": "scene2"
+            },
+            {
+              "pitch": 8,
+              "yaw": 103,
+              "type": "info",
+              "text": "Workshop Room"
+            }
+          ]
+        },
+
+        "scene5": {
+          "type": "equirectangular",
+          "panorama": "Electronics-Room.jpg",  // ✅ fixed
+          "autoLoad": true,
+          "hotSpots": [
+            {
+              "pitch": -10,
+              "yaw": 0,
+              "type": "info",
+              "text": "Epilog Fusion Maker 36 Laser Cutter"
+            },
+            {
+              "pitch": 0,
+              "yaw": -190,
+              "type": "info",
+              "text": "Electronics Bench"
+            },
+            {
+              "pitch": 0,
+              "yaw": -222,
+              "type": "info",
+              "text": "Pressure Former"
+            },
+            {
+              "pitch": 0,
+              "yaw": 115,
+              "type": "scene",
+              "text": "Continue the tour",
+              "sceneId": "scene2"
+            }
+          ]
+        }
+      }
+    });
+  </script>
+</body>
+</html>
