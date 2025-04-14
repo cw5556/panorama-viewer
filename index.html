@@ -21,34 +21,17 @@
   <script>
     pannellum.viewer('panorama', {
       "default": {
-        "firstScene": "splash",
+        "firstScene": "scene1",
         "sceneFadeDuration": 1000
       },
       "scenes": {
-        "splash": {
-          "type": "equirectangular",
-          "preview": "Front-Door.jpg",     // Static splash image
-          "panorama": "entrance.jpeg",     // Same as scene1 pano
-          "autoLoad": false,               // Wait for user to click
-          "hfov": 140,
-          "yaw": 0,
-          "hotSpots": [
-            {
-              "pitch": 0,
-              "yaw": 0,
-              "type": "scene",
-              "text": "Click to start the tour",
-              "sceneId": "scene1"
-            }
-          ]
-        },
-
         "scene1": {
           "type": "equirectangular",
-          "panorama": "entrance.jpeg",  // 3D printers, print pick up
-          "autoLoad": true,
-          "yaw": -20,
-          "hfov": 110,
+          "panorama": "entrance.jpeg",     // Same as scene1 pano
+          "preview": "Front-Door.jpg",     // Static splash image
+          "autoLoad": false,               // Wait for user to click
+          "yaw": -20
+          "hfov": 110
           "hotSpots": [
             {
               "pitch": -5,
