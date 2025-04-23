@@ -98,7 +98,7 @@
               "yaw": 82,
               "type": "scene",
               "text": "Continue the tour",
-              "sceneId": "scene1" // front area
+              "sceneId": "scene7" // front area, facing the other way
             },
             {
               "pitch": 4,
@@ -214,7 +214,41 @@
             }
           ]
         },
-
+        "scene7": {
+          "type": "equirectangular",
+          "panorama": "entrance2.jpg",     // Same as scene1 pano
+          "autoload": true,
+          "yaw": 80,
+          "hfov": 130,
+          "hotSpots": [
+            {
+              "pitch": -5,
+              "yaw": 3,
+              "type": "info",
+              "text": "Prusa MK4 3D Printers"
+            },
+            {
+              "pitch": -5,
+              "yaw": -256,
+              "type": "info",
+              "text": "3D Print Pick Up Shelf"
+            },
+            {
+              "pitch": 2,
+              "yaw": 273,
+              "type": "scene",
+              "text": "Continue the tour",
+              "sceneId": "scene2" // middle area
+            },
+            {
+              "pitch": 2,
+              "yaw": 193,
+              "type": "scene",
+              "text": "Continue the tour",
+              "sceneId": "scene6" // hall area
+            }
+          ]
+        },
         "scene6": {
           "type": "equirectangular",
           "panorama": "hall2.jpg",
