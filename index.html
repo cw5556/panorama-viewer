@@ -30,7 +30,7 @@
           "panorama": "entrance2.jpg",     // Same as scene1 pano
           "preview": "Front-Door-Cropped.jpg",     // Static splash image needs to be 2:1 ratio
           "autoLoad": false,               // Wait for user to click
-          "yaw": -80,
+          "yaw": -180,
           "hfov": 130,
           "hotSpots": [
             {
@@ -44,6 +44,12 @@
               "yaw": -256,
               "type": "info",
               "text": "3D Print Pick Up Shelf"
+            },
+            {
+              "pitch": -15,
+              "yaw": -256,
+              "type": "info",
+              "text": "Browsing Book Collection"
             },
             {
               "pitch": -7,
@@ -247,6 +253,12 @@
               "text": "Prusa MK4 3D Printers"
             },
           {
+              "pitch": -15,
+              "yaw": -256,
+              "type": "info",
+              "text": "Browsing Book Collection"
+            },
+          {
               "pitch": -7,
               "yaw": -205,
               "type": "info",
@@ -370,6 +382,65 @@
             }
           ]
         },
+         "scene10": {
+          "type": "equirectangular",
+          "panorama": "entrance2.jpg",     // For exiting hallway
+          "autoLoad": true,
+          "yaw": 100,
+          "hfov": 130,
+          "hotSpots": [
+            {
+              "pitch": -5,
+              "yaw": 3,
+              "type": "info",
+              "text": "Prusa MK4 3D Printers"
+            },
+          {
+              "pitch": -15,
+              "yaw": -256,
+              "type": "info",
+              "text": "Browsing Book Collection"
+            },
+          {
+              "pitch": -7,
+              "yaw": -205,
+              "type": "info",
+              "text": "Meet our staff!"
+            },
+            {
+              "pitch": -15,
+              "yaw": -256,
+              "type": "info",
+              "text": "Browsing Book Collection"
+            },
+                {
+              "pitch": -9,
+              "yaw": 319,
+              "type": "info",
+              "text": "3D Print Processing Station"
+            },
+            {
+              "pitch": -5,
+              "yaw": -256,
+              "type": "info",
+              "text": "3D Print Pick Up Shelf"
+            },
+            {
+              "pitch": 2,
+              "yaw": 273,
+              "type": "scene",
+              "text": "Center",
+              "sceneId": "scene2" // middle area
+            },
+            {
+              "pitch": 2,
+              "yaw": 193,
+              "type": "scene",
+              "text": "Hallway",
+              "sceneId": "scene6" // hall area
+            }
+          ]
+        },
         "scene6": {
           "type": "equirectangular",
           "panorama": "hall2.jpg",
@@ -394,7 +465,7 @@
               "yaw": -94,
               "type": "scene",
               "text": "Front",
-              "sceneId": "scene1" // front area
+              "sceneId": "scene10" // front area, slightly turned towards 3d printers
             }
           ]
         }
